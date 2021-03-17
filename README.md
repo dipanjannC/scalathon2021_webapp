@@ -1,1 +1,1 @@
-# scalathon2021_webapp
+# scalathon2021

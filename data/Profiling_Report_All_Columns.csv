@@ -1,0 +1,35 @@
+collection_name,column_name,total_count,max_value,min_value,max_value_count,min_value_count,unique_values,negative_value_count,zero_vale_count,max_length,min_length,null_value_count,null_percentage,special_char_count,alphanumeric_count
+customer,CustomerID,267615,18287,12346,59,1,4372,0.0,0.0,5,5,0,0.0,0.0,0.0
+customer,Age,267615,81,11,28,106,44,0.0,0.0,2,2,0,0.0,0.0,0.0
+customer,BookCode,267615,POST,10002,379,40,3684,0.0,0.0,12,1,0,0.0,0.0,0.0
+reviews,BookCode,112732,124987,22720,4202,11683,20,0.0,0.0,6,5,0,0.0,0.0,0.0
+reviews,Comment,112732,Ã‰ste es un libro que no te va a dejar igual. DespuÃ©s de haberlo leÃ­do desearÃ¡s poner en prÃ¡ctica sus pricipios para caminar en la voluntad de Dios. Las ilustraciones de la propia vida del autor sÃ³n muy enriquecedoras!,!!!the shirts came ripped and stained!!! do not waste your time and your money...poor quality!!the worst shopping experience!!!not recommended at all,1,1,112670,0.0,0.0,1007,1,2,0.0017741191498421034,52762.0,0.0
+sales_train,Units Sold,50820,1581180.0,31.7,1,1,45872,0.0,0.0,17,4,0,0.0,0.0,0.0
+sales_train,Available Books in the shelf,50820,2314410.6,37.629,1,1,50564,0.0,0.0,17,4,0,0.0,0.0,0.0
+sales_train,Price,50820,22.0069251517876,0.7006955042951201,1,1,50815,0.0,0.0,18,3,0,0.0,0.0,0.0
+sales_train,NewYear,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,MLK,50820,1.0,0.0,1785,49035,2,0.0,49035.0,1,1,0,0.0,0.0,0.0
+sales_train,Presidents,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,GoodFriday,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,Memorial,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,Independence,50820,1.0,0.0,1260,49560,2,0.0,49560.0,1,1,0,0.0,0.0,0.0
+sales_train,Labor,50820,1.0,0.0,2415,48405,2,0.0,48405.0,1,1,0,0.0,0.0,0.0
+sales_train,Thanksgiving,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,Christmas,50820,1.0,0.0,840,49980,2,0.0,49980.0,1,1,0,0.0,0.0,0.0
+sales_train,BookCode,50820,124987.0,22720.0,2541,2541,20,0.0,0.0,6,5,0,0.0,0.0,0.0
+sales_train,State,50820,Wisconsin,Arizona,2420,2420,21,0.0,0.0,10,4,0,0.0,0.0,0.0
+sales_train,Time,50820,Week End 12-31-17,Week End 01-06-19,420,420,121,0.0,0.0,17,17,0,0.0,0.0,0.0
+sales_test,Available Books in the shelf,3780,2247024.0,64.7,1,1,3751,0.0,0.0,17,4,0,0.0,0.0,0.0
+sales_test,Price,3780,21.8544930978559,0.927503721232014,1,1,3780,0.0,0.0,18,9,0,0.0,0.0,0.0
+sales_test,NewYear,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,MLK,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,Presidents,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,GoodFriday,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,Memorial,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,Independence,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,Labor,3780,0.0,0.0,3780,3780,1,0.0,3780.0,1,1,0,0.0,0.0,0.0
+sales_test,Thanksgiving,3780,1.0,0.0,420,3360,2,0.0,3360.0,1,1,0,0.0,0.0,0.0
+sales_test,Christmas,3780,1.0,0.0,420,3360,2,0.0,3360.0,1,1,0,0.0,0.0,0.0
+sales_test,BookCode,3780,124987.0,22720.0,189,189,20,0.0,0.0,6,5,0,0.0,0.0,0.0
+sales_test,State,3780,Wisconsin,Arizona,180,180,21,0.0,0.0,10,4,0,0.0,0.0,0.0
+sales_test,Time,3780,Week End 12-29-19,Week End 11-03-19,420,420,9,0.0,0.0,17,17,0,0.0,0.0,0.0
