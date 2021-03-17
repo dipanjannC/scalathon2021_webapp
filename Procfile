@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run get_up.py
+web: sh setup.sh && streamlit run get_ui.py
