@@ -10,12 +10,13 @@ from streamlit import cli as stcli
 import numpy as np
 import pandas as pd
 import sys
-import  os
 from PIL import Image
+import os 
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
-
-
+st.write(dir_path)
 
 
 @st.cache(suppress_st_warning=True)
