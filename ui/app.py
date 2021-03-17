@@ -25,24 +25,24 @@ def get_dataset(dataset_name):
     if dataset_name == "Customer":
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel("../data/Customer_v2.xlsx")
+            data = pd.read_excel("/app/data/Customer_v2.xlsx")
             st.success('Done')
         
     elif dataset_name == 'Reviews':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel("../data/Reviews.xlsx")
+            data = pd.read_excel("/app/data/Reviews.xlsx")
             st.success('Done')
         
     elif dataset_name == 'Sales Train':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel('../data/Sales.xlsx', sheet_name='Train')
+            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Train')
             st.success('Done')
     elif dataset_name == 'Sales Test':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel('../data/Sales.xlsx', sheet_name='Test')
+            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Test')
             st.success('Done')
         
 
@@ -92,7 +92,7 @@ def main():
     # set homepage image
     st.text(' - submission by Annwesha and Dipanjan')
     st.write('\n')
-    st.image('../data/img/homepage.jpg')
+    st.image('/app/data/img/homepage.jpg')
     st.subheader('\n  Problem Description') 
     st.markdown('XYZ is an American bookseller. It is a Fortune 1000 company and the bookseller with the largest number of retail outlets in the United States. It also sells books through various ecommerce channels. They sell around 3684 unique books in their different stores among which there are  4 top selling books on the basis of customer reviews. So XYZ has approached Bridgei2i Analytics Solutions to help them plan their growth strategy.')
     
@@ -116,18 +116,18 @@ def main():
         st.table(head)
         if dataset_name == 'Reviews':
             st.write("WordCloud")
-            st.image('../data/img/wordcloud.png')   
+            st.image('/app/data/img/wordcloud.png')   
 
     with st.beta_expander('Data Profiling Report'):
         st.write("Data Profiling : ")
-        st.write(read_data('../data/Profiling_Report_All_Columns.csv'))
+        st.write(read_data('/app/data/Profiling_Report_All_Columns.csv'))
 
 
     with st.beta_expander('Sentiment Analysis'):
-        book_sentiments = read_data('../data/overall_book_sentiment.csv')
+        book_sentiments = read_data('/app/data/overall_book_sentiment.csv')
         book_sentiments = book_sentiments.rename(columns={'BookCode':'index'}).set_index('index')
         st.write('\n Overall Sentiment  Analysis of common 20 books ')
-        st.image('../data/img/sentiment.png')
+        st.image('/app/data/img/sentiment.png')
         st.write('\n Average Sentiment of common 20 books ')
         st.text('This would help us to find top 4 books')
         st.bar_chart(book_sentiments,use_container_width=True)
@@ -135,7 +135,7 @@ def main():
 
     with st.beta_expander('Topic Modelling'):
         st.markdown('Top 5 topics distribution across the 20 book codes \n')
-        st.image('../data/img/topic_modelling.png')
+        st.image('/app/data/img/topic_modelling.png')
 
 
     with st.beta_expander('Forecasting'):
@@ -144,9 +144,9 @@ def main():
     with st.beta_expander('Question and Answers'):
 
         #reading files to be shown
-        top4_books = read_data('../data/top4_books.csv')
-        agegroups = read_data('../data/ageGroups.csv')
-        sample_reviews = pd.read_csv('../data/sample_reviews.csv',skiprows=[1])
+        top4_books = read_data('/app/data/top4_books.csv')
+        agegroups = read_data('/app/data/ageGroups.csv')
+        sample_reviews = pd.read_csv('/app/data/sample_reviews.csv',skiprows=[1])
 
         #Question 1
         st.subheader('Question 1: ')
@@ -161,7 +161,7 @@ def main():
         st.markdown('XYZ also wants Bridgei2i to determine the profile of customers who have given the most positive reviews \n')
         st.write('\n\n')
         st.write('According to the Datasets Available we only can determine the Age Bracket of customers who are interested towards buying top 4 books')
-        st.image('../data/img/cutomer_top4.png')
+        st.image('/app/data/img/cutomer_top4.png')
         st.table(agegroups)
 
     
