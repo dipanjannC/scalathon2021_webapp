@@ -16,7 +16,6 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
-st.write(dir_path)
 
 
 @st.cache(suppress_st_warning=True)
@@ -25,24 +24,24 @@ def get_dataset(dataset_name):
     if dataset_name == "Customer":
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel("/app/data/Customer_v2.xlsx")
+            data = pd.read_excel("/app/data/Customer_v2.xlsx",engine='openpyxl')
             st.success('Done')
         
     elif dataset_name == 'Reviews':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel("/app/data/Reviews.xlsx")
+            data = pd.read_excel("/app/data/Reviews.xlsx",engine='openpyxl')
             st.success('Done')
         
     elif dataset_name == 'Sales Train':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Train')
+            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Train',engine='openpyxl')
             st.success('Done')
     elif dataset_name == 'Sales Test':
         st.spinner()
         with st.spinner(text='Loading Data ....'):
-            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Test')
+            data = pd.read_excel('/app/data/Sales.xlsx', sheet_name='Test',engine='openpyxl')
             st.success('Done')
         
 
