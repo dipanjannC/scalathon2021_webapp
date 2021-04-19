@@ -137,8 +137,8 @@ def main():
         st.image('/app/data/img/topic_modelling.png')
 
 
-    with st.beta_expander('Forecasting'):
-        st.write('Juicy deets')
+    # with st.beta_expander('Forecasting'):
+    #     st.write('Juicy deets')
     
     with st.beta_expander('Question and Answers'):
 
@@ -162,6 +162,14 @@ def main():
         st.write('According to the Datasets Available we only can determine the Age Bracket of customers who are interested towards buying top 4 books')
         st.image('/app/data/img/cutomer_top4.png')
         st.table(agegroups)
+
+        
+        #Question 3
+        forecasted_values = read_data('/app/data/forecasted_values.csv')
+        st.subheader('Question 3: ')
+        st.markdown('XYZ bookseller wants to plan demand for the top shelf books for the upcoming 2 months across all the 21 states (given in data) of US \n')
+        st.write('\n\n')
+        st.table(forecasted_values)
 
     
 
